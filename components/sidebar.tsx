@@ -17,7 +17,7 @@ const Sidebar = () => {
     },
     {
       icon: Plus,
-      href: '/companion/create',
+      href: '/companion/new',
       label: 'Create',
       pro: true,
     },
@@ -30,9 +30,6 @@ const Sidebar = () => {
   ]
 
   const onNavigate = (url: string, pro: boolean) => {
-    if (pro) {
-      return router.push('/pro')
-    }
     return router.push(url)
   }
 
