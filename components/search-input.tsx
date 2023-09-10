@@ -8,7 +8,7 @@ import { Search } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { useDebounce } from '@/hooks/use-debounce'
 
-const SearchInput = () => {
+export const SearchInput = () => {
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -51,5 +51,3 @@ const SearchInput = () => {
     </div>
   )
 }
-
-export default SearchInput

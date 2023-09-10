@@ -10,7 +10,7 @@ interface CategoriesProps {
   data: Category[]
 }
 
-const Categories: React.FC<CategoriesProps> = ({ data }) => {
+export const Categories: React.FC<CategoriesProps> = ({ data }) => {
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -84,5 +84,3 @@ const Categories: React.FC<CategoriesProps> = ({ data }) => {
     </div>
   )
 }
-
-export default Categories
