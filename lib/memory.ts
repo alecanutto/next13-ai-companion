@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Redis } from '@upstash/redis'
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
 import { PineconeClient } from '@pinecone-database/pinecone'
