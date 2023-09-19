@@ -29,7 +29,7 @@ git clone https://github.com/alecanutto/next13-ai-companion.git
 ### Install packages
 
 ```shell
-npm i
+bun install
 ```
 
 ### Setup .env file
@@ -81,12 +81,12 @@ node scripts/seed.ts
 ### Start the app
 
 ```shell
-npm run dev
+bun run dev
 ```
 
 ## Available commands
 
-Running commands with npm `npm run [command]`
+Running commands with bun `bun run [command]`
 
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
