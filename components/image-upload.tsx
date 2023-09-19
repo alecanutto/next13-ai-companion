@@ -26,6 +26,7 @@ export const ImageUpload = ({ value, onChange }: ImageUploadProps) => {
       <CldUploadButton
         options={{ maxFiles: 1 }}
         uploadPreset="wfy05sgr"
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         onUpload={(result: any) => onChange(result.info.secure_url)}
       >
         <div
