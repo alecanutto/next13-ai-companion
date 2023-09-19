@@ -1,0 +1,20 @@
+{
+  "locale": {
+    "title": "Alterar idioma",
+    "en": "Inglês",
+    "pt": "Português"
+  },
+  "common": {
+    "welcome": "Bem vindo(a) {firstname}",
+    "newest": "Novos"
+  },
+  "subscription": {
+    "upgrade": "Atualizar",
+    "manageSubscription": "Gerenciar assinatura"
+  },
+  "routes": {
+    "home": "Início",
+    "create": "Criar",
+    "settings": "Configurar"
+  }
+}

@@ -3,6 +3,7 @@
 import { useProModal } from '@/hooks/use-pro-modal'
 import { cn } from '@/lib/utils'
 import { Home, Plus, Settings } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 import { usePathname, useRouter } from 'next/navigation'
 
@@ -10,7 +11,8 @@ interface SidebarProps {
   isPro: boolean
 }
 
-const Sidebar = ({ isPro }: SidebarProps) => {
+export const Sidebar = ({ isPro }: SidebarProps) => {
+  const t = useTranslations('routes')
   const { onOpen } = useProModal()
 
   const pathname = usePathname()
@@ -19,19 +21,19 @@ const Sidebar = ({ isPro }: SidebarProps) => {
     {
       icon: Home,
       href: '/',
-      label: 'Home',
+      label: t('home'),
       pro: false,
     },
     {
       icon: Plus,
       href: '/companion/new',
-      label: 'Create',
+      label: t('create'),
       pro: true,
     },
     {
       icon: Settings,
       href: '/settings',
-      label: 'Settings',
+      label: t('settings'),
       pro: false,
     },
   ]
@@ -65,5 +67,3 @@ const Sidebar = ({ isPro }: SidebarProps) => {
     </div>
   )
 }
-
-export default Sidebar

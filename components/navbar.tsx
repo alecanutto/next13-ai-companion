@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { ModeToggle } from './mode-toggle'
 import { MobileSidebar } from './mobile-sidebar'
 import { useProModal } from '@/hooks/use-pro-modal'
+import { LocaleSwitcher } from './locale-switcher'
 
 const font = Poppins({
   weight: '600',
@@ -45,6 +46,7 @@ export const Navbar = ({ isPro }: NavbarProps) => {
           </Button>
         )}
         <ModeToggle />
+        <LocaleSwitcher />
         <UserButton afterSignOutUrl="/" />
       </div>
     </div>

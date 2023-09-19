@@ -3,11 +3,13 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { Sparkles } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 import { Button } from '@/components/ui/button'
 import { useToast } from '@/components/ui/use-toast'
 
 export const SubscriptionButton = ({ isPro = false }: { isPro: boolean }) => {
+  const t = useTranslations('subscription')
   const { toast } = useToast()
   const [loading, setLoading] = useState(false)
 
@@ -35,7 +37,7 @@ export const SubscriptionButton = ({ isPro = false }: { isPro: boolean }) => {
       disabled={loading}
       onClick={onClick}
     >
-      {isPro ? 'Manage Subscription' : 'Upgrade'}
+      {isPro ? t('manageSubscription') : t('upgrade')}
       {!isPro && <Sparkles className="w-4 h-4 ml-2 fill-white" />}
     </Button>
   )

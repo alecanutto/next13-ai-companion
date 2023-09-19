@@ -1,0 +1,20 @@
+{
+  "locale": {
+    "title": "Change language",
+    "en": "English",
+    "pt": "Portuguese"
+  },
+  "common": {
+    "welcome": "Welcome {firstname}",
+    "newest": "Newest"
+  },
+  "subscription": {
+    "upgrade": "Upgrade",
+    "manageSubscription": "Manage Subscription"
+  },
+  "routes": {
+    "home": "Home",
+    "create": "Create",
+    "settings": "Settings"
+  }
+}
